@@ -1,18 +1,17 @@
-import { Categories } from "./Categories";
-import Category from "./Category";
+import { CategoryTextList } from "./Categories";
 import styles from './CategoriesComponent.module.scss'
-import CrownIcon from "../icons/CrownIcon";
+import Category from "./Category";
 
-export default function CategoriesComponent(){
+export default function CategoriesComponent() {
     return (
         <section className={styles.container}>
-            <Category name={Categories.all} />
-            <Category name={Categories.supermarket} />
-            <Category name={Categories.books} />
-            <Category name={Categories.fashion} />
-            <Category name={Categories.launches} />
-            <Category name={Categories.dailyOffers} />
-            <Category name={Categories.membership} propIcon={<CrownIcon />} />
+            {CategoryTextList.map((item, index) => (
+                <Category
+                    key={index}
+                    name={item.name}
+                    propIcon={item.propIcon}
+                />
+            ))}
         </section>
     )
 }

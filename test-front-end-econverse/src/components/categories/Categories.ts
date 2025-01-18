@@ -6,21 +6,43 @@ import ToolIcon from "../icons/ToolIcon";
 import HealthIcon from "../icons/HeathIcon";
 import FitnessIcon from "../icons/FitnessIcon";
 import FashionIcon from "../icons/FashionIcon";
+import CrownIcon from "../icons/CrownIcon";
 
 interface CategoryCardProps {
     name: string;
-    propIcon: JSX.Element;  // Usando React.ReactNode para representar o componente JSX
+    propIcon: JSX.Element,
 }
 
-export const Categories = {
-    all: "todas categorias",
-    supermarket: "supermercado",
-    books: "livros",
-    fashion: "moda",
-    launches: "lançamentos",
-    dailyOffers: "ofertas do dia",
-    membership: "assinatura",
-};
+interface CategoryTextProps {
+    name: string,
+    propIcon?: JSX.Element,
+}
+
+export const CategoryTextList: CategoryTextProps[] = [
+    {
+        name: "todas categorias"
+    },
+    {
+        name: "supermercado"
+    },
+    {
+        name: "livros"
+    },
+    {
+        name: "moda"
+    },
+    {
+        name: "lançamentos"
+    },
+    {
+        name: "ofertas do dia"
+    },
+    {
+        name: "assinatura",
+        propIcon: CrownIcon(),
+    },
+
+]
 
 export const categoryCards: CategoryCardProps[] = [
     { 
