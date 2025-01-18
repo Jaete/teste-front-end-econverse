@@ -1,0 +1,46 @@
+// Variables
+$container-height: 2.5rem;
+$padding-horizontal: 4.37rem;
+$box-shadow: 0px 8px 16px 0px rgba(57, 48, 19, 0.12);
+$font-size: 0.75rem;
+$font-weight: 600;
+$gap: 0.75rem;
+
+// Mixins
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Styles
+.container {
+    @include flex-center(row, space-evenly, center);
+    font-size: $font-size;
+    width: var(--regular-container-width);
+    height: $container-height;
+    box-shadow: $box-shadow;
+    padding: 0 $padding-horizontal;
+}
+
+.category {
+    @include flex-center(row, center, center);
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: normal;
+    text-transform: uppercase;
+    gap: $gap;
+}
+
+.category:hover {
+    cursor: pointer;
+    color: var(--DARK-BLUE-01);
+}
+
+.category:hover svg{
+    transition: fill 0.3s ease;
+    cursor: pointer;
+    fill: var(--DARK-BLUE-01);
+}
+

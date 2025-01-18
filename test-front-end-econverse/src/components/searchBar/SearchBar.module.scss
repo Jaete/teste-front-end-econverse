@@ -1,0 +1,35 @@
+$searchIconSize: 1.75rem;
+$searchBarWidth: 40rem;
+$searchBarHeight: 3rem;
+$searchIconOffsetX: 2 * $searchIconSize;
+$searchIconOffsetY: 1.35 * $searchIconSize;
+$searchBarPadding: 1.5rem;
+$fontSize: 0.875rem;
+$borderRadius: 10px;
+$backgroundColor: var(--light-gray-02);
+
+@mixin searchBarStyles {
+    width: $searchBarWidth;
+    height: $searchBarHeight;
+    flex-shrink: 0;
+    border: none;
+    font-size: $fontSize;
+    border-radius: $borderRadius;
+    background: $backgroundColor;
+}
+
+.searchBarContainer {
+    @include searchBarStyles;
+}
+
+.searchBar {
+    padding: $searchBarPadding;
+    @include searchBarStyles;
+}
+
+.searchIcon {
+    width: fit-content;
+    position: relative;
+    bottom: $searchIconOffsetY;
+    left: $searchBarWidth - $searchIconOffsetX;
+}

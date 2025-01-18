@@ -1,0 +1,17 @@
+$container-height: 18px;
+$gap-size: 9px;
+
+.container {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    height: $container-height;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    gap: $gap-size;
+
+    .highlightText {
+        color: var(--DARK-BLUE-01);
+    }
+}

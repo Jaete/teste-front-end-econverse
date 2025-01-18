@@ -1,0 +1,27 @@
+:root {
+  /* COLORS */
+  --LIGHT-GRAY-01: #F0F0F0;
+  --LIGHT-GRAY-02: #F6F5F2;
+  --GRAY-01: #9F9F9F;
+  --DARK-BLUE-01: #3019B2;
+
+  /* FONTS */
+  --regular-font: "Poppins", serif;
+  --regular-font-size: 12px;
+
+  /*SIZES*/
+  --regular-container-width: 80rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--regular-font);
+  color: var(--GRAY-01);
+}
+
+body{
+  font-family: var(--regular-font);
+  font-size: var(--regular-font-size);
+}

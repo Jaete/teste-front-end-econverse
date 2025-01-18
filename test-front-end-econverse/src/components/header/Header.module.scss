@@ -1,0 +1,44 @@
+$header-height: 9rem;
+$benefits-height: 2rem;
+$menu-height: 4.5rem;
+$gap-size: 119px;
+$border-color: var(--LIGHT-GRAY-01);
+$container-width: var(--regular-container-width);
+
+@mixin flex-center($direction: row, $wrap: wrap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: #{$direction} #{$wrap};
+}
+
+@mixin inline-flex-center($direction: row, $wrap: wrap) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: #{$direction} #{$wrap};
+}
+
+.headerContainer,
+.customerBenefits,
+.topMenu {
+    width: $container-width;
+}
+
+.headerContainer {
+    justify-self: center;
+    height: $header-height;
+    @include flex-center;
+}
+
+.customerBenefits {
+    height: $benefits-height;
+    @include inline-flex-center;
+    gap: $gap-size;
+    border-bottom: 1px solid $border-color;
+}
+
+.topMenu {
+    height: $menu-height;
+    @include inline-flex-center;
+}
