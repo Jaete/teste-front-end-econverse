@@ -1,0 +1,83 @@
+$container-height: 24.375rem;
+$background-image: url('../../imgs/hero-background.png');
+$background-color: lightgray;
+$background-position: -0.865px -269.732px;
+$background-size: 124.991% 307.707%;
+$calling-text-width: 70%;
+$calling-text-height: 60.375rem;
+$gradient: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #000 85.04%);
+$text-color: #fff;
+$text-width: 51.3rem;
+$text-left: 5rem;
+$text-top: 5rem;
+$text-line-height: 3.125rem;
+$gap: 1rem;
+$button-text-pos: 6.5rem;
+$button-width: 12.875rem;
+$button-height: 3.125rem;
+$button-padding: 0.4375rem 3.0625rem;
+$button-gap: 0.625rem;
+$button-bg-color: var(--CANARY-YELLOW);
+$button-color: #271C47;
+$button-font-weight: 600;
+$button-border-radius: 0.3125rem;
+$button-bg: var(--Amarelo, #F7CA11);
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: $container-height;
+    background: $background-image $background-color $background-position / $background-size no-repeat;
+
+    .callingText {
+        display: flex;
+        flex-direction: column;
+        width: $calling-text-width;
+        height: $calling-text-height;
+        background: $gradient;
+        gap: $gap;
+
+        p {
+            opacity: 1;
+            position: relative;
+            left: $text-left;
+            top: $text-top;
+            color: $text-color;
+            width: $text-width;
+            text-align: left;
+            line-height: $text-line-height;
+            font-weight: 300;
+        }
+
+        strong {
+            p {
+                font-weight: 600;
+            }
+        }
+
+        button {
+            display: flex;
+            width: $button-width;
+            height: $button-height;
+            padding: $button-padding;
+            justify-content: center;
+            align-items: center;
+            gap: $button-gap;
+            flex-shrink: 0;
+            position: relative;
+            left: $text-left;
+            top: $button-text-pos;
+            background-color: $button-bg-color;
+            color: $button-color;
+            font-weight: $button-font-weight;
+            border: none;
+            border-radius: $button-border-radius;
+            background: $button-bg;
+        }
+    }
+
+    .highlightText {
+        font-weight: 600;
+    }
+}

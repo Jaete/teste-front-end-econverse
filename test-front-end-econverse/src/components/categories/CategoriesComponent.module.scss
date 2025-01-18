@@ -1,12 +1,13 @@
-// Variables
+
 $container-height: 2.5rem;
 $padding-horizontal: 4.37rem;
 $box-shadow: 0px 8px 16px 0px rgba(57, 48, 19, 0.12);
 $font-size: 0.75rem;
 $font-weight: 600;
 $gap: 0.75rem;
+$hover-color: var(--DARK-BLUE-01);
 
-// Mixins
+
 @mixin flex-center($direction: row, $justify: center, $align: center) {
     display: flex;
     flex-direction: $direction;
@@ -14,7 +15,7 @@ $gap: 0.75rem;
     align-items: $align;
 }
 
-// Styles
+
 .container {
     @include flex-center(row, space-evenly, center);
     font-size: $font-size;
@@ -31,16 +32,15 @@ $gap: 0.75rem;
     line-height: normal;
     text-transform: uppercase;
     gap: $gap;
-}
 
-.category:hover {
-    cursor: pointer;
-    color: var(--DARK-BLUE-01);
-}
+    &:hover {
+        cursor: pointer;
+        color: $hover-color;
 
-.category:hover svg{
-    transition: fill 0.3s ease;
-    cursor: pointer;
-    fill: var(--DARK-BLUE-01);
+        svg {
+            transition: fill 0.3s ease;
+            cursor: pointer;
+            fill: $hover-color;
+        }
+    }
 }
-

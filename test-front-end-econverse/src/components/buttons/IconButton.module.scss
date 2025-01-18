@@ -1,12 +1,15 @@
 .button {
     background: none;
     border: none;
-}
 
-.button:hover,
-.button:hover svg,
-.button:hover svg clipPath,
-.button:hover svg path {
-    stroke: var(--DARK-BLUE-01);
-    cursor: pointer;
+    &:hover {
+        stroke: var(--DARK-BLUE-01);
+        cursor: pointer;
+
+        svg,
+        svg clipPath,
+        svg path {
+            stroke: var(--DARK-BLUE-01);
+        }
+    }
 }

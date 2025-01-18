@@ -1,5 +1,5 @@
 import TextWithHighlight from "../textWithHighlight/TextWithHighlight";
-import { CustomerBenefitsHighlightColor, CustomerBenefitsText } from "@/data/CustomerBenefitsText";
+import { CustomerBenefitsHighlightColor, CustomerBenefitsText } from "@/data/CustomerBenefits";
 import TopMenu from "../topMenu/TopMenu";
 import styles from './Header.module.scss';
 import CategoriesComponent from "../categories/CategoriesComponent";

@@ -19,19 +19,19 @@ $container-width: var(--regular-container-width);
     flex-flow: #{$direction} #{$wrap};
 }
 
-.headerContainer,
-.customerBenefits,
-.topMenu {
+%container {
     width: $container-width;
 }
 
 .headerContainer {
+    @extend %container;
     justify-self: center;
     height: $header-height;
     @include flex-center;
 }
 
 .customerBenefits {
+    @extend %container;
     height: $benefits-height;
     @include inline-flex-center;
     gap: $gap-size;
@@ -39,6 +39,7 @@ $container-width: var(--regular-container-width);
 }
 
 .topMenu {
+    @extend %container;
     height: $menu-height;
     @include inline-flex-center;
 }
