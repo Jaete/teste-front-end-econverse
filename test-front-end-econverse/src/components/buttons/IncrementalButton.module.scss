@@ -1,0 +1,30 @@
+.container {
+    display: inline-flex;
+    width: 6.875rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.25rem;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    justify-content: center;
+
+    p, button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border: none;
+        background: none;
+    }
+    
+    p {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--Roxo, #271C47);
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1rem;
+    }
+}

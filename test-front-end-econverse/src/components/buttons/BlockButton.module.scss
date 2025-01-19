@@ -1,0 +1,41 @@
+$hero-button-width: 12.875rem;
+$hero-button-height: 3.125rem;
+$modal-button-width: 1rem;
+$modal-button-height: 1rem;
+$button-padding: 0.4375rem 3.0625rem;
+$button-gap: 0.625rem;
+$button-bg-color: var(--CANARY-YELLOW);
+$button-color: #271C47;
+$button-font-weight: 600;
+$button-border-radius: 0.3125rem;
+$button-bg: var(--Amarelo, #F7CA11);
+$text-left: 5rem;
+$button-text-pos: 6.5rem;
+
+.blockButton {
+    display: flex;
+    padding: $button-padding;
+    justify-content: center;
+    align-items: center;
+    gap: $button-gap;
+    flex-shrink: 0;
+    position: relative;
+    background-color: $button-bg-color;
+    color: $button-color;
+    font-weight: $button-font-weight;
+    border: none;
+    border-radius: $button-border-radius;
+    background: $button-bg;
+
+    .hero {
+        width: $hero-button-width;
+        height: $hero-button-height;
+    }
+
+    .modal{
+        width: $modal-button-width;
+        height: $modal-button-height;
+    }
+}
+
+

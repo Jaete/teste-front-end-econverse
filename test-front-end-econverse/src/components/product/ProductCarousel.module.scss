@@ -1,0 +1,22 @@
+.carousel {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    width: 100%;
+
+   
+}
+
+.products {
+    display: inline-flex;
+    width: 81rem;
+    align-items: center;
+    gap: 1.125rem;
+    overflow-x: auto;
+    padding: 1rem;
+    scroll-snap-align: end;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}

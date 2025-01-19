@@ -6,6 +6,7 @@
   --GRAY-01: #9F9F9F;
   --DARK-BLUE-01: #3019B2;
   --YELLOW: #F7CA11;
+  --BLACK: #000;
 
   /* FONTS */
   --regular-font: "Poppins", serif;
@@ -23,7 +24,7 @@
   color: var(--GRAY-01);
 }
 
-body{
+body {
   font-family: var(--regular-font);
   font-size: var(--regular-font-size);
 }

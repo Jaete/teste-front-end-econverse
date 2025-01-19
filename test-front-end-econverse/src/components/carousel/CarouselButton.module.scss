@@ -1,0 +1,12 @@
+.transparentBg {
+    background: none;
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        border: none;
+    }
+}

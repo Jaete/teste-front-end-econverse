@@ -22,7 +22,7 @@ export default function Hero(): React.ReactElement {
                     highlightColor='--YELLOW'
                     reverse={true}
                 />
-                <BlockButton text={HeroText.Button}/>
+                <BlockButton text={HeroText.Button} size='hero' />
            </section>
         </span>
     )

@@ -1,0 +1,108 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 48.1rem;
+    height: 18.7rem;
+    gap: 5.44rem;
+
+    .productImage {
+        width: 15.5rem;
+    }
+
+    aside {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 12.4rem;
+    }
+
+    .productInfo {
+
+        display: inline-flex;
+        flex-direction: column;
+        gap: 1.12rem;
+
+        .productName {
+            width: 20.5rem;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            /* 1.25rem */
+            letter-spacing: 0.0625rem;
+            color: var(--BLACK);
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: 0.0625rem;
+            color: var(--BLACK);
+        }
+    }
+
+    .descriptionShort {
+        display: inline-flex;
+        flex-direction: column;
+        height: 2.93rem;
+        font-family: "Work Sans";
+        font-size: 0.625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150.5%;
+        letter-spacing: 0.03125rem;
+        gap: 1.12rem;
+
+        .link {
+            font-family: "Work Sans";
+            font-size: 0.6875rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+            letter-spacing: 0.03438rem;
+            color: var(--DARK-BLUE-01);
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+    }
+
+
+}
+
+.buyMenu{
+    display: inline-flex;
+    gap: 0.75rem;
+}
+
+.closeButton {
+    position: absolute;
+    top: 0.5rem;
+    right: 1.8rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

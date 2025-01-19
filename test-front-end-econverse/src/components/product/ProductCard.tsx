@@ -1,20 +1,22 @@
-import React from 'react';
+import { Currencies } from '@/data/Currencies';
+import React, { Ref } from 'react';
+import styles from './ProductCard.module.scss';
 
-interface ProductProps {
+export interface ProductProps {
     productName: string,
     descriptionShort?: string,
     photo?: string,
     price?: number,
+    cents?: number
 }
 
-const Product: React.FC<ProductProps> = ({ productName, descriptionShort, photo, price }) => {
+const Product: React.FC<ProductProps> = ({ productName, descriptionShort, photo, price, cents}) => {
     return (
-        <div>
-          <h2>{productName}</h2>
-          {photo && <img src={photo} alt={productName} />}
-          {descriptionShort && <p>{descriptionShort}</p>}
-          {price && <p>{price}</p>}
-        </div>
+        <section className={styles.container}>
+          <span className={styles.image}>{photo && <img src={photo} alt={productName} />}</span>
+          <span className={styles.productName}><h3>{productName}</h3></span>
+          <span className={styles.price}>{price && <p>{Currencies.BRL} {price}{cents ?? ',00'}</p>}</span>
+        </section>
       );
 };
 
