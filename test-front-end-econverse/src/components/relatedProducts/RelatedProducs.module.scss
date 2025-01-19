@@ -32,10 +32,10 @@
 
             &:hover{
                 cursor: pointer;
-                color: #3442B5;
             }
 
-            &:focus {
+            &:focus, &:hover {
+                font-weight: 700;
                 color: #3442B5;
             }
 
@@ -46,6 +46,19 @@
             &:last-child {
                 border-right: 1px solid #BDBDBD;
             }
+        }
+    }
+
+    .seeAllOnly{
+        button {
+            background: none;
+            border: none;
+            color: var(--Preto, #3F3F40);
+            text-align: center;
+            font-size: 0.9375rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
         }
     }
 }

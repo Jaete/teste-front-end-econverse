@@ -10,6 +10,8 @@ import styles from "./page.module.scss";
 import ProductCarousel from '@/components/product/ProductCarousel';
 import RelatedProducts from '@/components/relatedProducts/RelatedProducts';
 import PartnerCard from '@/components/partnerCard/PartnerCard';
+import Brands from '@/components/brands/Brands';
+import Footer from '@/components/footer/Footer';
 
 
 
@@ -39,6 +41,20 @@ export default function Home() {
           <PartnerCard />
           <PartnerCard />
       </section>
+      <section className={styles.relatedCategories}>
+        <RelatedProducts />
+      </section>
+      <section className={styles.partnerCards}>
+          <PartnerCard />
+          <PartnerCard />
+      </section>
+      <section className={styles.browseByBrands}>
+          <Brands />
+      </section>
+      <section className={styles.relatedCategories}>
+        <RelatedProducts />
+      </section>
+      <Footer />
     </main>
   );
 }

@@ -1,11 +1,11 @@
 import styles from './Divider.module.scss'
 
-export default function Divider({text}: {text: string}){
+export default function Divider({text, lines}: {text: string, lines: boolean}){
     return (
         <span className={styles.container}>
-            <hr className={styles.line}/>
+            {lines && <hr className={styles.line}/>}
             {text}
-            <hr className={styles.line}/>
+            {lines && <hr className={styles.line}/>}
         </span>
     )
 }

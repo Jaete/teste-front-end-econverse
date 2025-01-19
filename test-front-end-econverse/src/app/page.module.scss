@@ -33,4 +33,15 @@
   height: 31.4375rem;
   flex-shrink: 0;
   gap: 0.81rem;
+  padding-top: 3rem;
+}
+
+.browseByBrands {
+  height: 25rem;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 0.81rem;
 }

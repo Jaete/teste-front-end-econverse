@@ -9,7 +9,7 @@ import { Categories } from '@/data/Categories'
 export default function RelatedProducts({ category }: { category?: string }) {
     return (
         <section className={styles.container}>
-            <Divider text={category ? `Produtos de ${category}` : 'Produtos Relacionados'} />
+            <Divider text={category ? `Produtos de ${category}` : 'Produtos Relacionados'} lines={true}/>
             {!isEmpty(category) ? (
                 <span className={styles.subCategories}>
                     {Categories.Tech.subcategories.map((item, index) => (
@@ -18,7 +18,7 @@ export default function RelatedProducts({ category }: { category?: string }) {
                     <Subcategory text={'Ver todos'} />
                 </span>
             ) : (
-                <span className={styles.subCategories}>
+                <span className={styles.seeAllOnly}>
                     <Subcategory text={'Ver todos'} />
                 </span>
             )}
