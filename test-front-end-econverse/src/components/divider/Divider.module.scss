@@ -1,0 +1,16 @@
+.container {
+    display: inline-flex;
+    align-items: center;
+    color: #3442B5;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    gap: 2rem;
+
+    .line {
+        width: 22.5rem;
+        height: 0.0625rem;
+        background: #DEDEDE;
+    }
+}

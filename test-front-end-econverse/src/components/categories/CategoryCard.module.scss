@@ -18,6 +18,13 @@
         }
     }
 
+    &:focus {
+        p,
+        .icon {
+            color: var(--DARK-BLUE-01);
+        }
+    }
+
     .icon {
         display: inline-flex;
         width: 100%;

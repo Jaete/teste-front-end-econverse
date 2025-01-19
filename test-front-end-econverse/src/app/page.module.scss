@@ -9,7 +9,7 @@
   gap: 2.65rem;
 }
 
-.carousel {
+.relatedCategories {
   align-items: center;
   justify-content: center;
   display: inline-flex;
@@ -23,4 +23,14 @@
   gap: 1.125rem;
   overflow-x: auto;
   padding: 1rem;
+}
+
+.partnerCards {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 31.4375rem;
+  flex-shrink: 0;
+  gap: 0.81rem;
 }

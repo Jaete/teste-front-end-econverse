@@ -1,4 +1,4 @@
-import { CategoryTextList } from "./Categories";
+import { CategoryTextList } from "../../data/Categories";
 import styles from './CategoriesComponent.module.scss'
 import Category from "./Category";
 

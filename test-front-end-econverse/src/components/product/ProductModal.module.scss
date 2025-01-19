@@ -89,20 +89,25 @@
         }
     }
 
+    button {
+        background: var(--YELLOW);
+    }
 
+    .closeButton {
+        position: absolute;
+        top: 0.5rem;
+        right: 1.8rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .buyMenu{
+        display: inline-flex;
+        gap: 0.75rem;
+    }
 }
 
-.buyMenu{
-    display: inline-flex;
-    gap: 0.75rem;
-}
 
-.closeButton {
-    position: absolute;
-    top: 0.5rem;
-    right: 1.8rem;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
+

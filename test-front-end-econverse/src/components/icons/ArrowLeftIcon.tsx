@@ -7,7 +7,7 @@ export default function ArrowLeftIcon() {
             <path d="M22.6334 10.7442L21.5009 9.59998L15.1667 16L21.5009 22.4L22.6334 21.2557L17.4317 16L22.6334 10.7442Z" fill="#3F3F40" />
             <defs>
                 <filter id="filter0_d_12729_36" x="0.5" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                     <feOffset dy="4" />
                     <feGaussianBlur stdDeviation="2" />

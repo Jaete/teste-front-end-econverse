@@ -1,25 +1,75 @@
 .container {
     display: inline-flex;
     flex-flow: column wrap;
-    width: 19rem;
-    height: 31.25rem;
+    width: 18.7rem;
+    height: fit-content;
     flex-shrink: 0;
     border-radius: 0.625rem;
     background: #FFF;
     box-shadow: 0px 3px 19px 0px rgba(0, 0, 0, 0.22);
     padding: 1rem;
-}
 
-.image{
-    align-self: center;
-}
+    button {
+        color: white;
+        background-color: var(--DARK-BLUE-01);
+        height: 2.75rem;
+    }
 
-.productName {
-    h3 {
-        color: var(--BLACK);
-        font-weight: 300;
-        font-size: 0.9375rem;
-        text-align: left;
-        align-self: flex-start;
+    .image{
+        align-self: center;
+        height: 14.25rem;
+    }
+    
+    .productInfo{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+        height: 12.87rem;
+    }
+
+    .productName {
+        h3 {
+            color: var(--BLACK);
+            font-weight: 300;
+            font-size: 0.9375rem;
+            text-align: left;
+            align-self: flex-start;
+            height: 2.825rem;
+        }
+    }
+    
+    .price {
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: 0.0625rem;
+        color: var(--BLACK);     
+    }
+
+    .promoPrice {
+        color: #808080;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: line-through;
+    }
+    
+    .installment {
+        color: var(--Preto, #3F3F40);
+        font-family: Poppins;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    
+    .freeShipment {
+        color: var(--DARK-BLUE-01)
     }
 }
+
+
+
