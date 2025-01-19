@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 90rem;
+    padding: 1rem;
+
+    p {
+        color: var(--Preto, #3F3F40);
+        font-family: Poppins;
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
