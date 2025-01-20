@@ -48,10 +48,8 @@ $button-bg: var(--Amarelo, #F7CA11);
             text-align: left;
             line-height: $text-line-height;
             font-weight: 300;
-        }
 
-        strong {
-            p {
+            &.highlightText {
                 font-weight: 600;
             }
         }
@@ -75,9 +73,5 @@ $button-bg: var(--Amarelo, #F7CA11);
             border-radius: $button-border-radius;
             background: $button-bg;
         }
-    }
-
-    .highlightText {
-        font-weight: 600;
     }
 }

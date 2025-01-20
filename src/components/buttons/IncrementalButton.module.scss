@@ -1,11 +1,20 @@
+$container-width: 6.875rem;
+$container-height: 2.25rem;
+$container-border-radius: 0.25rem;
+$container-border-style: 1px solid #D9D9D9;
+
+$text-font-size: 1rem;
+$text-line-height: 1rem;
+$text-font-weight: 500;
+
 .container {
     display: inline-flex;
-    width: 6.875rem;
-    height: 2.25rem;
+    width: $container-width;
+    height: $container-height;
     flex-shrink: 0;
-    border-radius: 0.25rem;
-    border: 1px solid #D9D9D9;
-    background: #FFF;
+    border-radius: $container-border-radius;
+    border: $container-border-style;
+    background: white;
     justify-content: center;
 
     p, button {
@@ -21,10 +30,10 @@
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        color: var(--Roxo, #271C47);
-        font-size: 1rem;
+        color: var(--BLACK, #271C47);
+        font-size: $text-font-size;
         font-style: normal;
-        font-weight: 500;
-        line-height: 1rem;
+        font-weight: $text-font-weight;
+        line-height: $text-line-height;
     }
 }

@@ -1,63 +1,84 @@
+$container-width: 85.25rem;
+$container-height: 38.3125rem;
+
+$subCategories-width: 79.4rem;
+
+$button-height: 2.5rem;
+$button-padding: 0.75rem 3.625rem;
+$button-gap: 0.625rem;
+$button-border-color: #BDBDBD;
+$button-background: #FFF;
+$button-font-size: 1rem;
+$button-font-weight: 400;
+$button-line-height: 1rem; /* 100% */
+$button-text-transform: uppercase;
+$button-color: #000;
+$button-hover-color: #3442B5;
+
+$seeAllOnly-font-size: 0.9375rem;
+$seeAllOnly-font-weight: 700;
+$seeAllOnly-color: var(--Preto, #3F3F40);
+
 .container {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    width: 85.25rem;
-    height: 38.3125rem;
+    width: $container-width;
+    height: $container-height;
     flex-shrink: 0;
 
     .subCategories {
         display: inline-flex;
         flex-direction: row;
         align-items: center;
-        width: 79.4rem;
+        width: $subCategories-width;
 
         button {
             display: flex;
-            height: 2.5rem;
-            padding: 0.75rem 3.625rem;
+            height: $button-height;
+            padding: $button-padding;
             justify-content: center;
             align-items: center;
-            gap: 0.625rem;
+            gap: $button-gap;
             flex: 1 0 0;
-            border: 1px solid #BDBDBD;
+            border: 1px solid $button-border-color;
             border-left: none;
-            background: #FFF;
-            font-size: 1rem;
+            background: $button-background;
+            font-size: $button-font-size;
             font-style: normal;
-            font-weight: 400;
-            line-height: 1rem; /* 100% */
-            text-transform: uppercase;
-            color: #000;
+            font-weight: $button-font-weight;
+            line-height: $button-line-height;
+            text-transform: $button-text-transform;
+            color: $button-color;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
             }
 
             &:focus, &:hover {
                 font-weight: 700;
-                color: #3442B5;
+                color: $button-hover-color;
             }
 
             &:first-child {
-                border-left: 1px solid #BDBDBD;
+                border-left: 1px solid $button-border-color;
             }
 
             &:last-child {
-                border-right: 1px solid #BDBDBD;
+                border-right: 1px solid $button-border-color;
             }
         }
     }
 
-    .seeAllOnly{
+    .seeAllOnly {
         button {
             background: none;
             border: none;
-            color: var(--Preto, #3F3F40);
+            color: $seeAllOnly-color;
             text-align: center;
-            font-size: 0.9375rem;
+            font-size: $seeAllOnly-font-size;
             font-style: normal;
-            font-weight: 700;
+            font-weight: $seeAllOnly-font-weight;
             line-height: normal;
         }
     }

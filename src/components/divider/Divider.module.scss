@@ -1,16 +1,23 @@
+$container-font-size: 1.875rem;
+$container-font-weight: 700;
+$container-gap: 2rem;
+$line-width: 22.5rem;
+$line-border-color: var(--LIGHT-GRAY-03);
+$line-opacity: 0.3;
+
 .container {
     display: inline-flex;
     align-items: center;
     color: #3442B5;
-    font-size: 1.875rem;
+    font-size: $container-font-size;
     font-style: normal;
-    font-weight: 700;
+    font-weight: $container-font-weight;
     line-height: normal;
-    gap: 2rem;
+    gap: $container-gap;
 
     .line {
-        width: 22.5rem;
-        border-color: #DEDEDE;
-        opacity: 0.3;
+        width: $line-width;
+        border-color: $line-border-color;
+        opacity: $line-opacity;
     }
 }

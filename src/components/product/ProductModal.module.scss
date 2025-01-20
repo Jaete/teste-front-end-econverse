@@ -1,14 +1,46 @@
+$modal-background: rgba(0, 0, 0, 0.5);
+$modal-z-index: 1000;
+$modal-padding: 20px;
+$modal-border-radius: 8px;
+$modal-width: 48.1rem;
+$modal-height: 18.7rem;
+$modal-gap: 5.44rem;
+
+$product-image-width: 15.5rem;
+
+$aside-gap: 2rem;
+$aside-height: 12.4rem;
+
+$product-info-gap: 1.12rem;
+
+$product-name-width: 20.5rem;
+$product-name-font-size: 1.25rem;
+$product-name-letter-spacing: 0.0625rem;
+
+$description-short-height: 2.93rem;
+$description-short-font-size: 0.625rem;
+$description-short-letter-spacing: 0.03125rem;
+
+$link-font-size: 0.6875rem;
+$link-letter-spacing: 0.03438rem;
+
+$close-button-top: 0.5rem;
+$close-button-right: 1.8rem;
+$close-button-font-size: 1.5rem;
+
+$buy-menu-gap: 0.75rem;
+
 .modalOverlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: $modal-background;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: $modal-z-index;
 }
 
 .modalContent {
@@ -16,47 +48,45 @@
     align-items: center;
     justify-content: space-evenly;
     background: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: $modal-padding;
+    border-radius: $modal-border-radius;
     position: relative;
-    width: 48.1rem;
-    height: 18.7rem;
-    gap: 5.44rem;
+    width: $modal-width;
+    height: $modal-height;
+    gap: $modal-gap;
 
     .productImage {
-        width: 15.5rem;
+        width: $product-image-width;
     }
 
     aside {
         display: inline-flex;
         flex-direction: column;
-        gap: 2rem;
-        height: 12.4rem;
+        gap: $aside-gap;
+        height: $aside-height;
     }
 
     .productInfo {
-
         display: inline-flex;
         flex-direction: column;
-        gap: 1.12rem;
+        gap: $product-info-gap;
 
         .productName {
-            width: 20.5rem;
-            font-size: 1.25rem;
+            width: $product-name-width;
+            font-size: $product-name-font-size;
             font-style: normal;
             font-weight: 400;
             line-height: 100%;
-            /* 1.25rem */
-            letter-spacing: 0.0625rem;
+            letter-spacing: $product-name-letter-spacing;
             color: var(--BLACK);
         }
 
         .price {
-            font-size: 1.25rem;
+            font-size: $product-name-font-size;
             font-style: normal;
             font-weight: 600;
             line-height: 100%;
-            letter-spacing: 0.0625rem;
+            letter-spacing: $product-name-letter-spacing;
             color: var(--BLACK);
         }
     }
@@ -64,28 +94,27 @@
     .descriptionShort {
         display: inline-flex;
         flex-direction: column;
-        height: 2.93rem;
+        height: $description-short-height;
         font-family: "Work Sans";
-        font-size: 0.625rem;
+        font-size: $description-short-font-size;
         font-style: normal;
         font-weight: 500;
         line-height: 150.5%;
-        letter-spacing: 0.03125rem;
-        gap: 1.12rem;
+        letter-spacing: $description-short-letter-spacing;
+        gap: $product-info-gap;
 
         .link {
             font-family: "Work Sans";
-            font-size: 0.6875rem;
+            font-size: $link-font-size;
             font-style: normal;
             font-weight: 600;
             line-height: 100%;
-            letter-spacing: 0.03438rem;
+            letter-spacing: $link-letter-spacing;
             color: var(--DARK-BLUE-01);
 
             &:hover {
                 cursor: pointer;
             }
-
         }
     }
 
@@ -95,19 +124,16 @@
 
     .closeButton {
         position: absolute;
-        top: 0.5rem;
-        right: 1.8rem;
+        top: $close-button-top;
+        right: $close-button-right;
         background: none;
         border: none;
-        font-size: 1.5rem;
+        font-size: $close-button-font-size;
         cursor: pointer;
     }
 
-    .buyMenu{
+    .buyMenu {
         display: inline-flex;
-        gap: 0.75rem;
+        gap: $buy-menu-gap;
     }
 }
-
-
-

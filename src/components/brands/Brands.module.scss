@@ -1,13 +1,18 @@
+$container-width: 78.125rem;
+$container-height: 17rem;
+
+$brand-list-gap: 2.62rem;
+
 .container {
     display: inline-flex;
     flex-direction: column;
-    width: 78.125rem;
-    height: 17rem;
+    width: $container-width;
+    height: $container-height;
     align-items: center;
     
     .brandList {
         display: inline-flex;
         flex-direction: row;
-        gap: 2.62rem;
+        gap: $brand-list-gap;
     }
 }

@@ -1,31 +1,57 @@
+$container-gap: 7.75rem;
+$container-padding: 2.5rem 5rem;
+$container-height: 10.125rem;
+
+$calling-width-h3: 28.9375rem;
+$calling-width-h4: 32.1875rem;
+$calling-font-size-h3: 2rem;
+$calling-font-size-h4: 0.875rem;
+
+$userInfo-padding: 0.5rem;
+$userInfo-gap: 0.5rem;
+$userInfo-width: 42rem;
+$userInfo-height: 4.44rem;
+
+$userInput-width: 14.5rem;
+$userInput-height: 2.63rem;
+$userInput-gap: 0.625rem;
+$userInput-padding: 0.75rem 1.5rem;
+
+$button-height: 2.63rem;
+$button-font-size: 0.875rem;
+$button-line-height: 0.75rem;
+
+$checkbox-font-size: 0.875rem;
+
+$border-radius: 0.5rem;
+$border-width: 1px;
+
 .container {
     display: inline-flex;
-    gap: 7.75rem;
-    padding: 2.5rem 5rem 2.5rem 5rem;
-    padding-left: 5rem;
+    gap: $container-gap;
+    padding: $container-padding;
     width: 100%;
-    height: 10.125rem;
+    height: $container-height;
     flex-shrink: 0;
-    background: var(--Cores-principais-Violeta, #271C47);
+    background: var(--VIOLET, #271C47);
     justify-content: center;
 
     .calling {
-
         h3 {
-            width: 28.9375rem;
-            color: #FFF;
+            width: $calling-width-h3;
+            color: white;
             font-family: Outfit;
-            font-size: 2rem;
+            font-size: $calling-font-size-h3;
             font-style: normal;
             font-weight: 600;
             line-height: 120%;
         }
         
         h4 {
-            width: 32.1875rem;
-            color: #FFF;
+            width: $calling-width-h4;
+            color: white;
             font-family: Poppins;
-            font-size: 0.875rem;
+            font-size: $calling-font-size-h4;
             font-style: normal;
             font-weight: 200;
             line-height: 1.125rem;
@@ -35,36 +61,36 @@
     .userInfo {
         display: inline-flex;
         flex-wrap: wrap;
-        padding: 0.5rem;
-        gap: 0.5rem;
-        width: 42rem;
-        height: 4.44rem;
+        padding: $userInfo-padding;
+        gap: $userInfo-gap;
+        width: $userInfo-width;
+        height: $userInfo-height;
 
-        .userInput{
+        .userInput {
             display: flex;
-            width: 14.5rem;
-            height: 2.63rem;
-            padding: 0.75rem 1.5rem;
+            width: $userInput-width;
+            height: $userInput-height;
+            padding: $userInput-padding;
             align-items: center;
-            gap: 0.625rem;
-            border-radius: 0.5rem;
-            border: 1px solid #E7E7E7;
-            background: #FFF;
+            gap: $userInput-gap;
+            border-radius: $border-radius;
+            border: $border-width solid var(--LIGHT-GRAY-04);
+            background: white;
         }
 
         button {
             background-color: var(--YELLOW);
-            height: 2.63rem;
-            color: #161615;
-            font-size: 0.875rem;
+            height: $button-height;
+            color: var(--BLACK);
+            font-size: $button-font-size;
             font-style: normal;
             font-weight: 600;
-            line-height: 0.75rem;
+            line-height: $button-line-height;
         }
 
         .checkbox {
-            color: #FFF;
-            font-size: 0.875rem;
+            color: white;
+            font-size: $checkbox-font-size;
             font-style: normal;
             font-weight: 300;
             line-height: 150%;

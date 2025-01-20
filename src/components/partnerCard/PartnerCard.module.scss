@@ -1,49 +1,73 @@
+$background-image: url('../../imgs/partners-background.png');
+$gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 85.04%);
+
+$container-width: 39.6rem;
+$container-height: 24rem;
+$container-border-radius: 1.25rem;
+
+$content-width: 39.6rem;
+$content-height: 16.125rem;
+$content-padding: 2.76rem;
+$content-border-radius: 1.25rem;
+$content-gap: 1rem;
+
+$h3-font-size: 2.5rem;
+
+$p-width: 12.495rem;
+$p-font-size: 1rem;
+
+$button-width: 9.04331rem;
+$button-height: 3rem;
+$button-border-radius: 0.375rem;
+$button-margin-top: 1rem;
+$button-font-size: 1rem;
+$button-font-weight: 700;
+$button-background: var(--YELLOW);
+
 .container {
     display: inline-flex;
     align-items: flex-end;
-    width: 39.6rem;
-    height: 24rem;
-    background: url('../../imgs/partners-background.png') lightgray 50% / cover no-repeat ;
-    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+    width: $container-width;
+    height: $container-height;
+    background: $background-image lightgray 50% / cover no-repeat;
+    border-radius: $container-border-radius;
 
     .content {
         display: inline-flex;
         flex-direction: column;
         justify-content: stretch;
-        padding: 2.76rem;
+        padding: $content-padding;
         padding-top: 0;
-        width: 39.6rem;
-        height: 16.125rem;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 85.04%);
-        border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
-        gap: 1rem;
+        width: $content-width;
+        height: $content-height;
+        background: $gradient;
+        border-radius: $content-border-radius;
+        gap: $content-gap;
 
         h3 {
-            color: var(--WHITE, #FFF);
-            font-size: 2.5rem;
-            font-style: normal;
+            color: var(--WHITE, white);
+            font-size: $h3-font-size;
             font-weight: 700;
             line-height: normal;
         }
 
-        p{
-            width: 12.495rem;
-            color: var(--WHITE, #FFF);
-            font-size: 1rem;
-            font-style: normal;
+        p {
+            width: $p-width;
+            color: var(--WHITE, white);
+            font-size: $p-font-size;
             font-weight: 400;
             line-height: normal;
         }
 
         button {
-            font-size: 1rem;
-            font-weight: 700;
-            margin-top: 1rem;
-            width: 9.04331rem;
-            height: 3rem;
+            font-size: $button-font-size;
+            font-weight: $button-font-weight;
+            margin-top: $button-margin-top;
+            width: $button-width;
+            height: $button-height;
             flex-shrink: 0;
-            border-radius: 0.375rem;
-            background: var(--Amarelo, #F7CA11);
+            border-radius: $button-border-radius;
+            background: $button-background;
         }
     }
 }

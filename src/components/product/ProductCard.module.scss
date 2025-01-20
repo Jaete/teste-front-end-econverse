@@ -1,75 +1,86 @@
+$container-width: 18.7rem;
+$container-radius: 0.625rem;
+$container-padding: 1rem;
+$button-height: 2.75rem;
+$image-height: 14.25rem;
+$product-info-height: 12.87rem;
+$product-name-font-size: 0.9375rem;
+$product-name-height: 2.825rem;
+$price-font-size: 1.25rem;
+$price-letter-spacing: 0.0625rem;
+$promo-price-font-size: 1rem;
+$installment-font-size: 0.75rem;
+$box-shadow: 0px 3px 19px 0px rgba(0, 0, 0, 0.22);
+
 .container {
     display: inline-flex;
     flex-flow: column wrap;
-    width: 18.7rem;
+    width: $container-width;
     height: fit-content;
     flex-shrink: 0;
-    border-radius: 0.625rem;
+    border-radius: $container-radius;
     background: #FFF;
-    box-shadow: 0px 3px 19px 0px rgba(0, 0, 0, 0.22);
-    padding: 1rem;
+    box-shadow: $box-shadow;
+    padding: $container-padding;
 
     button {
         color: white;
         background-color: var(--DARK-BLUE-01);
-        height: 2.75rem;
+        height: $button-height;
     }
 
-    .image{
+    .image {
         align-self: center;
-        height: 14.25rem;
+        height: $image-height;
     }
-    
-    .productInfo{
+
+    .productInfo {
         display: inline-flex;
         flex-direction: column;
         justify-content: center;
         gap: 0.5rem;
-        height: 12.87rem;
+        height: $product-info-height;
     }
 
     .productName {
         h3 {
             color: var(--BLACK);
             font-weight: 300;
-            font-size: 0.9375rem;
+            font-size: $product-name-font-size;
             text-align: left;
             align-self: flex-start;
-            height: 2.825rem;
+            height: $product-name-height;
         }
     }
-    
+
     .price {
-        font-size: 1.25rem;
+        font-size: $price-font-size;
         font-style: normal;
         font-weight: 700;
         line-height: 100%;
-        letter-spacing: 0.0625rem;
-        color: var(--BLACK);     
+        letter-spacing: $price-letter-spacing;
+        color: var(--BLACK);
     }
 
     .promoPrice {
-        color: #808080;
-        font-size: 1rem;
+        color: var(--DARK-GRAY-02);
+        font-size: $promo-price-font-size;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         text-decoration: line-through;
     }
-    
+
     .installment {
-        color: var(--Preto, #3F3F40);
+        color: var(--BLACK, #3F3F40);
         font-family: Poppins;
-        font-size: 0.75rem;
+        font-size: $installment-font-size;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
     }
-    
+
     .freeShipment {
-        color: var(--DARK-BLUE-01)
+        color: var(--DARK-BLUE-01);
     }
 }
-
-
-
