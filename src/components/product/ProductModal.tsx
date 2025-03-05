@@ -14,10 +14,9 @@ interface ModalProps {
 }
 
 const ProductModal: React.FC<ModalProps> = ({ isOpen, onClose, selectedProduct }) => {
-    if (!isOpen) return null;
-
     const [productCount, setProductCount] = useState(0);
 
+    if (!isOpen) return null;
     const onPlus = () => {
         setProductCount(currentCount => currentCount + 1);
     }
