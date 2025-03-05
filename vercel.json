@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/app/page.tsx",
+        "use": "@vercel/next"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "src/app/page.tsx"
+      }
+    ],
+    "buildCommand": "npm run build",
+    "installCommand": "npm install",
+    "framework": "nextjs"
+}
