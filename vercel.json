@@ -12,7 +12,7 @@
         "dest": "/"
       }
     ],
-    "buildCommand": "npm run build",
+    "buildCommand": "next build",
     "installCommand": "npm install",
     "framework": "nextjs"
 }
