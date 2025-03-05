@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import Header from "@/components/header/Header";
 import Hero from "@/components/hero/Hero";
 import CategoryCard from "@/components/categories/CategoryCard";
