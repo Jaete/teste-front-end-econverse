@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
       {
-        "src": "package.json",
+        "src": "package-lock.json",
         "use": "@vercel/next"
       }
     ],
@@ -11,5 +11,8 @@
         "src": "/(.*)",
         "dest": "/"
       }
-    ]
+    ],
+    "buildCommand": "npm run build",
+    "installCommand": "npm install",
+    "framework": "nextjs"
 }
