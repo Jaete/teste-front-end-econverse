@@ -1,0 +1,9 @@
+.subcategoryButton {
+    transition: color var(--transition-fast) var(--ease-out),
+                font-weight var(--transition-fast) var(--ease-out),
+                background-color var(--transition-fast) var(--ease-out);
+
+    &:active {
+        background-color: var(--LIGHT-GRAY-01);
+    }
+}

@@ -21,6 +21,21 @@
 
   /*SIZES*/
   --regular-container-width: 80rem;
+
+  /* MOTION & ELEVATION */
+  --transition-fast: 150ms;
+  --transition-base: 250ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-resting-sm: 0px 3px 19px 0px rgba(0, 0, 0, 0.22);
+  --shadow-hover-sm: 0px 6px 24px 0px rgba(0, 0, 0, 0.28);
+  --shadow-hover-md: 0px 10px 28px 0px rgba(0, 0, 0, 0.24);
+  --translate-hover: -2px;
+  --scale-hover-sm: 1.02;
+}
+
+:focus-visible {
+  outline: 2px solid var(--DARK-BLUE-01);
+  outline-offset: 2px;
 }
 
 * {

@@ -32,6 +32,12 @@ $height-container: 7.25rem;
             font-size: $font-size-link;
             font-weight: $font-weight-regular;
             line-height: $line-height;
+            cursor: pointer;
+            transition: color var(--transition-fast) var(--ease-out);
+
+            &:hover {
+                color: var(--DARK-BLUE-01);
+            }
         }
     }
 }

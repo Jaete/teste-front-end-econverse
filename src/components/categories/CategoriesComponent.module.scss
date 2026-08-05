@@ -32,13 +32,17 @@ $hover-color: var(--DARK-BLUE-01);
     line-height: normal;
     text-transform: uppercase;
     gap: $gap;
+    cursor: pointer;
+    transition: color var(--transition-fast) var(--ease-out);
+
+    svg {
+        transition: fill var(--transition-fast) var(--ease-out);
+    }
 
     &:hover {
-        cursor: pointer;
         color: $hover-color;
 
         svg {
-            transition: fill 0.3s ease;
             cursor: pointer;
             fill: $hover-color;
         }

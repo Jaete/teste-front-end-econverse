@@ -1,15 +1,30 @@
 .button {
     background: none;
     border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.25rem;
+    transition: background-color var(--transition-fast) var(--ease-out),
+                transform var(--transition-fast) var(--ease-out);
+
+    svg,
+    svg clipPath,
+    svg path {
+        transition: stroke var(--transition-fast) var(--ease-out);
+    }
 
     &:hover {
         stroke: var(--DARK-BLUE-01);
-        cursor: pointer;
+        background-color: var(--LIGHT-GRAY-01);
 
         svg,
         svg clipPath,
         svg path {
             stroke: var(--DARK-BLUE-01);
         }
+    }
+
+    &:active {
+        transform: scale(0.94);
     }
 }

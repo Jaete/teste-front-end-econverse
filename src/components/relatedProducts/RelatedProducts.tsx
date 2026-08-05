@@ -2,7 +2,7 @@ import { isEmpty } from '@/utils/ValueCheck'
 import Subcategory from '../categories/Subcategory'
 import Divider from '../divider/Divider'
 import ProductCarousel from '../product/ProductCarousel'
-import styles from './RelatedProducs.module.scss'
+import styles from './RelatedProducts.module.scss'
 import { Categories } from '@/data/Categories'
 
 

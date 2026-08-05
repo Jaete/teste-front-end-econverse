@@ -76,6 +76,11 @@ $border-width: 1px;
             border-radius: $border-radius;
             border: $border-width solid var(--LIGHT-GRAY-04);
             background: white;
+            transition: box-shadow var(--transition-fast) var(--ease-out);
+
+            &:focus-within {
+                box-shadow: 0 0 0 2px var(--YELLOW);
+            }
         }
 
         button {
@@ -86,6 +91,7 @@ $border-width: 1px;
             font-style: normal;
             font-weight: 600;
             line-height: $button-line-height;
+            cursor: pointer;
         }
 
         .checkbox {

@@ -28,6 +28,9 @@ $close-button-top: 0.5rem;
 $close-button-right: 1.8rem;
 $close-button-font-size: 1.5rem;
 
+$modal-transition-duration: 300ms;
+$modal-ease: cubic-bezier(0.33, 1, 0.68, 1);
+
 $buy-menu-gap: 0.75rem;
 
 .modalOverlay {
@@ -41,6 +44,16 @@ $buy-menu-gap: 0.75rem;
     justify-content: center;
     align-items: center;
     z-index: $modal-z-index;
+    opacity: 0;
+    transition: opacity $modal-transition-duration $modal-ease;
+
+    &.open {
+        opacity: 1;
+    }
+
+    &.closing {
+        opacity: 0;
+    }
 }
 
 .modalContent {
@@ -54,6 +67,20 @@ $buy-menu-gap: 0.75rem;
     width: $modal-width;
     height: $modal-height;
     gap: $modal-gap;
+    transform: scale(0.96) translateY(16px);
+    opacity: 0;
+    transition: transform $modal-transition-duration $modal-ease,
+                opacity $modal-transition-duration $modal-ease;
+
+    &.open {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+
+    &.closing {
+        transform: scale(0.96) translateY(16px);
+        opacity: 0;
+    }
 
     .productImage {
         width: $product-image-width;
@@ -112,8 +139,11 @@ $buy-menu-gap: 0.75rem;
             letter-spacing: $link-letter-spacing;
             color: var(--DARK-BLUE-01);
 
+            transition: color var(--transition-fast) var(--ease-out);
+
             &:hover {
                 cursor: pointer;
+                text-decoration: underline;
             }
         }
     }
@@ -130,6 +160,13 @@ $buy-menu-gap: 0.75rem;
         border: none;
         font-size: $close-button-font-size;
         cursor: pointer;
+        transition: color var(--transition-fast) var(--ease-out),
+                    transform var(--transition-fast) var(--ease-out);
+
+        &:hover {
+            color: var(--DARK-BLUE-01);
+            transform: scale(1.1);
+        }
     }
 
     .buyMenu {

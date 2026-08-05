@@ -1,12 +1,17 @@
 .transparentBg {
     background: none;
     border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: transform var(--transition-fast) var(--ease-out);
 
-    &:hover{
-        cursor: pointer;
+    &:hover {
+        transform: scale(1.08);
     }
 
-    &:active{
+    &:active {
         border: none;
+        transform: scale(0.92);
     }
 }

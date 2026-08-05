@@ -16,23 +16,22 @@ $icon-height: 70%;
     flex-direction: column;
     align-items: center;
     border: none;
+    cursor: pointer;
     font-weight: $card-button-font-weight;
     font-size: $card-button-font-size;
+    transition: color var(--transition-fast) var(--ease-out);
 
-    &:hover {
-        cursor: pointer;
-
+    &:hover,
+    &:focus-visible {
         p,
         .icon {
             color: var(--DARK-BLUE-01);
         }
     }
 
-    &:focus {
-        p,
-        .icon {
-            color: var(--DARK-BLUE-01);
-        }
+    &:hover .icon {
+        transform: translateY(var(--translate-hover));
+        box-shadow: var(--shadow-hover-sm);
     }
 
     .icon {
@@ -44,6 +43,8 @@ $icon-height: 70%;
         border-radius: $icon-border-radius;
         background: white;
         box-shadow: $icon-box-shadow;
+        transition: transform var(--transition-fast) var(--ease-out),
+                    box-shadow var(--transition-fast) var(--ease-out);
     }
 
     p {

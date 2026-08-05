@@ -25,6 +25,12 @@ $backgroundColor: var(--light-gray-02);
 .searchBar {
     padding: $searchBarPadding;
     @include searchBarStyles;
+    transition: box-shadow var(--transition-fast) var(--ease-out);
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px var(--DARK-BLUE-01);
+    }
 }
 
 .searchIcon {

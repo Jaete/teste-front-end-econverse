@@ -55,7 +55,7 @@ $seeAllOnly-color: var(--Preto, #3F3F40);
                 cursor: pointer;
             }
 
-            &:focus, &:hover {
+            &:focus-visible, &:hover {
                 font-weight: 700;
                 color: $button-hover-color;
             }

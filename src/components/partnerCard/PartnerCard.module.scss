@@ -31,6 +31,11 @@ $button-background: var(--YELLOW);
     height: $container-height;
     background: $background-image lightgray 50% / cover no-repeat;
     border-radius: $container-border-radius;
+    transition: transform var(--transition-base) var(--ease-out);
+
+    &:hover {
+        transform: scale(var(--scale-hover-sm));
+    }
 
     .content {
         display: inline-flex;
@@ -68,6 +73,7 @@ $button-background: var(--YELLOW);
             flex-shrink: 0;
             border-radius: $button-border-radius;
             background: $button-background;
+            cursor: pointer;
         }
     }
 }

@@ -58,6 +58,9 @@ export default function ProductCarousel() {
 
     const closeModal = () => {
         setIsModalOpen(false);
+    };
+
+    const handleModalExited = () => {
         setSelectedProduct(null);
     };
 
@@ -75,7 +78,7 @@ export default function ProductCarousel() {
                             price={product.price}
                         />
                         {selectedProduct == product && (
-                            <ProductModal isOpen={isModalOpen} onClose={closeModal} selectedProduct={product} />
+                            <ProductModal isOpen={isModalOpen} onClose={closeModal} onExited={handleModalExited} selectedProduct={product} />
                         )}
                     </div>
 

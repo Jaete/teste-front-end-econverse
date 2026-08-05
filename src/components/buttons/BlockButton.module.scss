@@ -26,4 +26,25 @@ $yellow: var(--YELLOW);
     font-weight: $button-font-weight;
     border: none;
     border-radius: $button-border-radius;
+    cursor: pointer;
+    transition: transform var(--transition-fast) var(--ease-out),
+                box-shadow var(--transition-fast) var(--ease-out),
+                background-color var(--transition-fast) var(--ease-out);
+
+    &:hover {
+        transform: translateY(var(--translate-hover));
+        box-shadow: var(--shadow-hover-sm);
+    }
+
+    &:active {
+        transform: translateY(0) scale(0.98);
+        box-shadow: none;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+    }
 }

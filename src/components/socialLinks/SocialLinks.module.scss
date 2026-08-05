@@ -5,4 +5,17 @@
     gap: 1.625rem;
     width: 7.75rem;
     height: 1.5rem;
+
+    a {
+        display: inline-flex;
+        cursor: pointer;
+        opacity: 0.85;
+        transition: opacity var(--transition-fast) var(--ease-out),
+                    transform var(--transition-fast) var(--ease-out);
+
+        &:hover {
+            opacity: 1;
+            transform: translateY(var(--translate-hover));
+        }
+    }
 }

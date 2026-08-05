@@ -5,7 +5,7 @@ export default function IconButton({method, icon}:{method: Function, icon: JSX.E
     return (
         <button 
             className={styles.button}
-            onClick={() => method}>
+            onClick={() => method()}>
             {icon}
         </button>
     );
