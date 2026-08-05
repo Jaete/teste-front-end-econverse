@@ -21,6 +21,7 @@ $container-width: var(--regular-container-width);
 
 %container {
     width: $container-width;
+    margin: 0 auto;
 }
 
 .headerContainer {
